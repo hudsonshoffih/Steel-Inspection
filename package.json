@@ -1,0 +1,18 @@
+{
+  "name": "steel-inspector-web",
+  "version": "2.0.0",
+  "description": "Production-Ready Web Application for SAIL Steel Defect Inspection",
+  "private": true,
+  "scripts": {
+    "build:client": "npm run build --prefix client",
+    "build:server": "npm run build --prefix server",
+    "build": "npm run build:client && npm run build:server",
+    "start": "node server/dist/index.js",
+    "dev:server": "npm run dev --prefix server",
+    "dev:client": "npm run dev --prefix client",
+    "dev": "concurrently -n \"SERVER,CLIENT\" -c \"cyan,magenta\" \"npm run dev:server\" \"npm run dev:client\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

@@ -1,0 +1,186 @@
+[
+ {
+  "file": "sample-01.jpg",
+  "original": "Screenshot-2025-06-22-at-8_45_12-PM_png.rf.4c35f2a15d3d05ec6439201a23c43e99.jpg",
+  "hint": null,
+  "width": 640,
+  "height": 640,
+  "detections": null
+ },
+ {
+  "file": "sample-02.jpg",
+  "original": "Screenshot-2025-06-22-at-8_45_12-PM_png.rf.581cb5de5a66dbdcf70831845c1ea2fc.jpg",
+  "hint": null,
+  "width": 640,
+  "height": 640,
+  "detections": null
+ },
+ {
+  "file": "sample-03.jpg",
+  "original": "Screenshot-2025-06-22-at-8_45_46-PM_png.rf.0dcd4dbf35716afbc0d989de85b9c020.jpg",
+  "hint": null,
+  "width": 640,
+  "height": 640,
+  "detections": null
+ },
+ {
+  "file": "sample-04.jpg",
+  "original": "Screenshot-2025-06-22-at-8_45_46-PM_png.rf.691ab5422adeb9ef983d0cf18a93201d.jpg",
+  "hint": null,
+  "width": 640,
+  "height": 640,
+  "detections": null
+ },
+ {
+  "file": "sample-05.jpg",
+  "original": "Screenshot-2025-06-22-at-8_46_00-PM_png.rf.1361d6f4dbee1df37182511f6dc2634c.jpg",
+  "hint": null,
+  "width": 640,
+  "height": 640,
+  "detections": null
+ },
+ {
+  "file": "sample-06.jpg",
+  "original": "Screenshot-2025-06-22-at-8_46_00-PM_png.rf.24e4a4514b1be5a35228926f05467505.jpg",
+  "hint": null,
+  "width": 640,
+  "height": 640,
+  "detections": null
+ },
+ {
+  "file": "sample-07.jpg",
+  "original": "Screenshot-2025-06-22-at-8_47_18-PM_png.rf.d4a9cf01d5c0cae7e0f02027695bf5e7.jpg",
+  "hint": null,
+  "width": 640,
+  "height": 640,
+  "detections": null
+ },
+ {
+  "file": "sample-08.jpg",
+  "original": "Screenshot-2025-06-22-at-8_47_18-PM_png.rf.e4ef0f542e4efdd2831ec8bc605d702f.jpg",
+  "hint": null,
+  "width": 640,
+  "height": 640,
+  "detections": null
+ },
+ {
+  "file": "sample-09.jpg",
+  "original": "Screenshot-2025-06-22-at-8_47_58-PM_png.rf.147b19d20760d4c2d4947b846b673c8e.jpg",
+  "hint": null,
+  "width": 640,
+  "height": 640,
+  "detections": null
+ },
+ {
+  "file": "sample-10.jpg",
+  "original": "Screenshot-2025-06-22-at-8_47_58-PM_png.rf.4f8291f3a480ac12fc4f0e208e70b0c7.jpg",
+  "hint": null,
+  "width": 640,
+  "height": 640,
+  "detections": null
+ },
+ {
+  "file": "sample-11.jpg",
+  "original": "Screenshot-2025-06-22-at-8_48_29-PM_png.rf.fa03a5b34f89ae02b96b9f9edcf5125f.jpg",
+  "hint": null,
+  "width": 640,
+  "height": 640,
+  "detections": null
+ },
+ {
+  "file": "sample-12.jpg",
+  "original": "Screenshot-2025-06-22-at-8_48_29-PM_png.rf.fa413c9dc224779095a07c655b633e03.jpg",
+  "hint": null,
+  "width": 640,
+  "height": 640,
+  "detections": null
+ },
+ {
+  "file": "sample-13.jpg",
+  "original": "dent2_jpg.rf.12af5857863d82110425be3412061274.jpg",
+  "hint": "Dent",
+  "width": 640,
+  "height": 640,
+  "detections": null
+ },
+ {
+  "file": "sample-14.jpg",
+  "original": "dent2_jpg.rf.e4db5e8dcde3c6dad011d4912e1e1b5b.jpg",
+  "hint": "Dent",
+  "width": 640,
+  "height": 640,
+  "detections": null
+ },
+ {
+  "file": "sample-15.jpg",
+  "original": "hole-2_png.rf.35afe0257b6347d3a97de6816b4a5c30.jpg",
+  "hint": "Hole",
+  "width": 640,
+  "height": 640,
+  "detections": null
+ },
+ {
+  "file": "sample-16.jpg",
+  "original": "hole-4_webp.rf.a2aef5d7343e59f0f5e7bab581cf1fa8.jpg",
+  "hint": "Hole",
+  "width": 640,
+  "height": 640,
+  "detections": null
+ },
+ {
+  "file": "sample-17.jpg",
+  "original": "hole-4_webp.rf.bd02366c39b1598e46490bdd075240d6.jpg",
+  "hint": "Hole",
+  "width": 640,
+  "height": 640,
+  "detections": null
+ },
+ {
+  "file": "sample-18.jpg",
+  "original": "hole_jpg.rf.5e10399157c521cbe3d77d998b559fb7.jpg",
+  "hint": "Hole",
+  "width": 640,
+  "height": 640,
+  "detections": null
+ },
+ {
+  "file": "sample-19.jpg",
+  "original": "hole_jpg.rf.e0c16f93b825ee83517d4835ece2e055.jpg",
+  "hint": "Hole",
+  "width": 640,
+  "height": 640,
+  "detections": null
+ },
+ {
+  "file": "sample-20.jpg",
+  "original": "holes-5_jpg.rf.158edebee938acc23cdda6f3c6689c82.jpg",
+  "hint": "Hole",
+  "width": 640,
+  "height": 640,
+  "detections": null
+ },
+ {
+  "file": "sample-21.jpg",
+  "original": "holes-5_jpg.rf.257227c8071313a01944f7b50e792a88.jpg",
+  "hint": "Hole",
+  "width": 640,
+  "height": 640,
+  "detections": null
+ },
+ {
+  "file": "sample-22.jpg",
+  "original": "sheet 15_Scratch_20260819_194549.jpg",
+  "hint": "Scratch",
+  "width": 1920,
+  "height": 1080,
+  "detections": null
+ },
+ {
+  "file": "sample-23.jpg",
+  "original": "sheet 15_Scratch_20260819_194550.jpg",
+  "hint": "Scratch",
+  "width": 1920,
+  "height": 1080,
+  "detections": null
+ }
+]

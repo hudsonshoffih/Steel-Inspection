@@ -1,0 +1,1186 @@
+[
+{
+"id": 1,
+"sheet_number": "test_sheet",
+"defect_type": "Scratch",
+"length_meter": 0.0,
+"timestamp": "2025-07-04 23:43:06",
+"image_path": "reports/test_sheet/images/test_sheet_Scratch_20250704_234306.jpg"
+},
+{
+"id": 2,
+"sheet_number": "test_sheet_dryrun",
+"defect_type": "Dent",
+"length_meter": 10.5,
+"timestamp": "2026-08-19 19:23:23",
+"image_path": "reports/test_sheet/images/test.jpg"
+},
+{
+"id": 3,
+"sheet_number": "test_sheet",
+"defect_type": "Scratch",
+"length_meter": 0.0,
+"timestamp": "2026-08-19 19:44:18",
+"image_path": "reports/test_sheet/images/test_sheet_Scratch_20260819_194418.jpg"
+},
+{
+"id": 4,
+"sheet_number": "test_sheet",
+"defect_type": "Scratch",
+"length_meter": 0.0,
+"timestamp": "2026-08-19 19:44:18",
+"image_path": "reports/test_sheet/images/test_sheet_Scratch_20260819_194418.jpg"
+},
+{
+"id": 5,
+"sheet_number": "test_sheet",
+"defect_type": "Scratch",
+"length_meter": 0.0,
+"timestamp": "2026-08-19 19:44:18",
+"image_path": "reports/test_sheet/images/test_sheet_Scratch_20260819_194418.jpg"
+},
+{
+"id": 6,
+"sheet_number": "test_sheet",
+"defect_type": "Scratch",
+"length_meter": 0.0,
+"timestamp": "2026-08-19 19:44:18",
+"image_path": "reports/test_sheet/images/test_sheet_Scratch_20260819_194418.jpg"
+},
+{
+"id": 7,
+"sheet_number": "test_sheet",
+"defect_type": "Scratch",
+"length_meter": 0.0,
+"timestamp": "2026-08-19 19:44:18",
+"image_path": "reports/test_sheet/images/test_sheet_Scratch_20260819_194418.jpg"
+},
+{
+"id": 8,
+"sheet_number": "test_sheet",
+"defect_type": "Scratch",
+"length_meter": 0.0,
+"timestamp": "2026-08-19 19:44:53",
+"image_path": "reports/test_sheet/images/test_sheet_Scratch_20260819_194453.jpg"
+},
+{
+"id": 9,
+"sheet_number": "test_sheet",
+"defect_type": "Scratch",
+"length_meter": 0.0,
+"timestamp": "2026-08-19 19:44:53",
+"image_path": "reports/test_sheet/images/test_sheet_Scratch_20260819_194453.jpg"
+},
+{
+"id": 10,
+"sheet_number": "test_sheet",
+"defect_type": "Scratch",
+"length_meter": 0.0,
+"timestamp": "2026-08-19 19:44:53",
+"image_path": "reports/test_sheet/images/test_sheet_Scratch_20260819_194453.jpg"
+},
+{
+"id": 11,
+"sheet_number": "test_sheet",
+"defect_type": "Scratch",
+"length_meter": 0.0,
+"timestamp": "2026-08-19 19:44:53",
+"image_path": "reports/test_sheet/images/test_sheet_Scratch_20260819_194453.jpg"
+},
+{
+"id": 12,
+"sheet_number": "test_sheet",
+"defect_type": "Scratch",
+"length_meter": 0.0,
+"timestamp": "2026-08-19 19:44:53",
+"image_path": "reports/test_sheet/images/test_sheet_Scratch_20260819_194453.jpg"
+},
+{
+"id": 13,
+"sheet_number": "test_sheet",
+"defect_type": "Dent",
+"length_meter": 0.0,
+"timestamp": "2026-08-19 19:45:00",
+"image_path": "reports/test_sheet/images/test_sheet_Dent_20260819_194500.jpg"
+},
+{
+"id": 14,
+"sheet_number": "sheet 15",
+"defect_type": "Scratch",
+"length_meter": 1207.45,
+"timestamp": "2026-08-19 19:45:50",
+"image_path": "reports/sheet 15/images/sheet 15_Scratch_20260819_194549.jpg"
+},
+{
+"id": 15,
+"sheet_number": "sheet 15",
+"defect_type": "Scratch",
+"length_meter": 1210.94,
+"timestamp": "2026-08-19 19:45:50",
+"image_path": "reports/sheet 15/images/sheet 15_Scratch_20260819_194550.jpg"
+},
+{
+"id": 16,
+"sheet_number": "sheet 15",
+"defect_type": "Scratch",
+"length_meter": 1211.24,
+"timestamp": "2026-08-19 19:45:50",
+"image_path": "reports/sheet 15/images/sheet 15_Scratch_20260819_194550.jpg"
+},
+{
+"id": 17,
+"sheet_number": "sheet 15",
+"defect_type": "Scratch",
+"length_meter": 1214.67,
+"timestamp": "2026-08-19 19:45:50",
+"image_path": "reports/sheet 15/images/sheet 15_Scratch_20260819_194550.jpg"
+},
+{
+"id": 18,
+"sheet_number": "sheet 15",
+"defect_type": "Scratch",
+"length_meter": 1220.81,
+"timestamp": "2026-08-19 19:45:50",
+"image_path": "reports/sheet 15/images/sheet 15_Scratch_20260819_194550.jpg"
+},
+{
+"id": 19,
+"sheet_number": "sheet 15",
+"defect_type": "Scratch",
+"length_meter": 1227.58,
+"timestamp": "2026-08-19 19:45:50",
+"image_path": "reports/sheet 15/images/sheet 15_Scratch_20260819_194550.jpg"
+},
+{
+"id": 20,
+"sheet_number": "sheet 15",
+"defect_type": "Scratch",
+"length_meter": 1230.83,
+"timestamp": "2026-08-19 19:45:50",
+"image_path": "reports/sheet 15/images/sheet 15_Scratch_20260819_194550.jpg"
+},
+{
+"id": 21,
+"sheet_number": "sheet 15",
+"defect_type": "Scratch",
+"length_meter": 1231.1,
+"timestamp": "2026-08-19 19:45:50",
+"image_path": "reports/sheet 15/images/sheet 15_Scratch_20260819_194550.jpg"
+},
+{
+"id": 22,
+"sheet_number": "sheet 15",
+"defect_type": "Scratch",
+"length_meter": 1234.62,
+"timestamp": "2026-08-19 19:45:50",
+"image_path": "reports/sheet 15/images/sheet 15_Scratch_20260819_194550.jpg"
+},
+{
+"id": 23,
+"sheet_number": "sheet 15",
+"defect_type": "Scratch",
+"length_meter": 1207.45,
+"timestamp": "2026-08-19 19:46:07",
+"image_path": "reports/sheet 15/images/sheet 15_Scratch_20260819_194549.jpg"
+},
+{
+"id": 24,
+"sheet_number": "sheet 15",
+"defect_type": "Scratch",
+"length_meter": 1210.94,
+"timestamp": "2026-08-19 19:46:07",
+"image_path": "reports/sheet 15/images/sheet 15_Scratch_20260819_194550.jpg"
+},
+{
+"id": 25,
+"sheet_number": "sheet 15",
+"defect_type": "Scratch",
+"length_meter": 1211.24,
+"timestamp": "2026-08-19 19:46:07",
+"image_path": "reports/sheet 15/images/sheet 15_Scratch_20260819_194550.jpg"
+},
+{
+"id": 26,
+"sheet_number": "sheet 15",
+"defect_type": "Scratch",
+"length_meter": 1214.67,
+"timestamp": "2026-08-19 19:46:07",
+"image_path": "reports/sheet 15/images/sheet 15_Scratch_20260819_194550.jpg"
+},
+{
+"id": 27,
+"sheet_number": "sheet 15",
+"defect_type": "Scratch",
+"length_meter": 1220.81,
+"timestamp": "2026-08-19 19:46:07",
+"image_path": "reports/sheet 15/images/sheet 15_Scratch_20260819_194550.jpg"
+},
+{
+"id": 28,
+"sheet_number": "sheet 15",
+"defect_type": "Scratch",
+"length_meter": 1227.58,
+"timestamp": "2026-08-19 19:46:07",
+"image_path": "reports/sheet 15/images/sheet 15_Scratch_20260819_194550.jpg"
+},
+{
+"id": 29,
+"sheet_number": "sheet 15",
+"defect_type": "Scratch",
+"length_meter": 1230.83,
+"timestamp": "2026-08-19 19:46:07",
+"image_path": "reports/sheet 15/images/sheet 15_Scratch_20260819_194550.jpg"
+},
+{
+"id": 30,
+"sheet_number": "sheet 15",
+"defect_type": "Scratch",
+"length_meter": 1231.1,
+"timestamp": "2026-08-19 19:46:07",
+"image_path": "reports/sheet 15/images/sheet 15_Scratch_20260819_194550.jpg"
+},
+{
+"id": 31,
+"sheet_number": "sheet 15",
+"defect_type": "Scratch",
+"length_meter": 1234.62,
+"timestamp": "2026-08-19 19:46:07",
+"image_path": "reports/sheet 15/images/sheet 15_Scratch_20260819_194550.jpg"
+},
+{
+"id": 32,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 237.5,
+"timestamp": "2026-09-10 21:00:06",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210006_0.jpg"
+},
+{
+"id": 33,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 241.0,
+"timestamp": "2026-09-10 21:00:06",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210006_0.jpg"
+},
+{
+"id": 34,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 247.5,
+"timestamp": "2026-09-10 21:00:06",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210006_0.jpg"
+},
+{
+"id": 35,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 250.5,
+"timestamp": "2026-09-10 21:00:06",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210006_0.jpg"
+},
+{
+"id": 36,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 261.5,
+"timestamp": "2026-09-10 21:00:06",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210006_0.jpg"
+},
+{
+"id": 37,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 264.5,
+"timestamp": "2026-09-10 21:00:06",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210006_0.jpg"
+},
+{
+"id": 38,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 267.5,
+"timestamp": "2026-09-10 21:00:07",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210007_0.jpg"
+},
+{
+"id": 39,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 274.0,
+"timestamp": "2026-09-10 21:00:07",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210007_0.jpg"
+},
+{
+"id": 40,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 277.5,
+"timestamp": "2026-09-10 21:00:07",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210007_0.jpg"
+},
+{
+"id": 41,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 288.0,
+"timestamp": "2026-09-10 21:00:07",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210007_0.jpg"
+},
+{
+"id": 42,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 291.5,
+"timestamp": "2026-09-10 21:00:07",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210007_0.jpg"
+},
+{
+"id": 43,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 295.0,
+"timestamp": "2026-09-10 21:00:07",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210007_0.jpg"
+},
+{
+"id": 44,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 301.5,
+"timestamp": "2026-09-10 21:00:07",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210007_0.jpg"
+},
+{
+"id": 45,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 305.0,
+"timestamp": "2026-09-10 21:00:07",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210007_0.jpg"
+},
+{
+"id": 46,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 315.5,
+"timestamp": "2026-09-10 21:00:08",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210008_0.jpg"
+},
+{
+"id": 47,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 319.0,
+"timestamp": "2026-09-10 21:00:08",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210008_0.jpg"
+},
+{
+"id": 48,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 322.0,
+"timestamp": "2026-09-10 21:00:08",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210008_0.jpg"
+},
+{
+"id": 49,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 328.5,
+"timestamp": "2026-09-10 21:00:08",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210008_0.jpg"
+},
+{
+"id": 50,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 331.5,
+"timestamp": "2026-09-10 21:00:08",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210008_0.jpg"
+},
+{
+"id": 51,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 334.5,
+"timestamp": "2026-09-10 21:00:08",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210008_0.jpg"
+},
+{
+"id": 52,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 338.0,
+"timestamp": "2026-09-10 21:00:08",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210008_0.jpg"
+},
+{
+"id": 53,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 341.5,
+"timestamp": "2026-09-10 21:00:08",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210008_0.jpg"
+},
+{
+"id": 54,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 341.5,
+"timestamp": "2026-09-10 21:00:08",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210008_1.jpg"
+},
+{
+"id": 55,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 344.5,
+"timestamp": "2026-09-10 21:00:08",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210008_0.jpg"
+},
+{
+"id": 56,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 373.5,
+"timestamp": "2026-09-10 21:00:09",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210009_0.jpg"
+},
+{
+"id": 57,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 380.0,
+"timestamp": "2026-09-10 21:00:09",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210009_0.jpg"
+},
+{
+"id": 58,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 383.0,
+"timestamp": "2026-09-10 21:00:09",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210009_0.jpg"
+},
+{
+"id": 59,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 392.5,
+"timestamp": "2026-09-10 21:00:09",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210009_0.jpg"
+},
+{
+"id": 60,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 395.5,
+"timestamp": "2026-09-10 21:00:09",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210009_0.jpg"
+},
+{
+"id": 61,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 398.5,
+"timestamp": "2026-09-10 21:00:09",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210009_0.jpg"
+},
+{
+"id": 62,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 404.5,
+"timestamp": "2026-09-10 21:00:09",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210009_0.jpg"
+},
+{
+"id": 63,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 408.0,
+"timestamp": "2026-09-10 21:00:09",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210009_0.jpg"
+},
+{
+"id": 64,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 414.5,
+"timestamp": "2026-09-10 21:00:10",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210010_0.jpg"
+},
+{
+"id": 65,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 414.5,
+"timestamp": "2026-09-10 21:00:10",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210010_1.jpg"
+},
+{
+"id": 66,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 414.5,
+"timestamp": "2026-09-10 21:00:10",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210010_2.jpg"
+},
+{
+"id": 67,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 414.5,
+"timestamp": "2026-09-10 21:00:10",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210010_3.jpg"
+},
+{
+"id": 68,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 414.5,
+"timestamp": "2026-09-10 21:00:10",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210010_4.jpg"
+},
+{
+"id": 69,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 418.0,
+"timestamp": "2026-09-10 21:00:10",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210010_0.jpg"
+},
+{
+"id": 70,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 418.0,
+"timestamp": "2026-09-10 21:00:10",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210010_1.jpg"
+},
+{
+"id": 71,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 418.0,
+"timestamp": "2026-09-10 21:00:10",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210010_2.jpg"
+},
+{
+"id": 72,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 418.0,
+"timestamp": "2026-09-10 21:00:10",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210010_3.jpg"
+},
+{
+"id": 73,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 421.0,
+"timestamp": "2026-09-10 21:00:10",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210010_0.jpg"
+},
+{
+"id": 74,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 421.0,
+"timestamp": "2026-09-10 21:00:10",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210010_1.jpg"
+},
+{
+"id": 75,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 421.0,
+"timestamp": "2026-09-10 21:00:10",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210010_2.jpg"
+},
+{
+"id": 76,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 421.0,
+"timestamp": "2026-09-10 21:00:10",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210010_3.jpg"
+},
+{
+"id": 77,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 421.0,
+"timestamp": "2026-09-10 21:00:10",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210010_4.jpg"
+},
+{
+"id": 78,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 421.0,
+"timestamp": "2026-09-10 21:00:10",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210010_5.jpg"
+},
+{
+"id": 79,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 425.0,
+"timestamp": "2026-09-10 21:00:10",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210010_0.jpg"
+},
+{
+"id": 80,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 425.0,
+"timestamp": "2026-09-10 21:00:10",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210010_1.jpg"
+},
+{
+"id": 81,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 425.0,
+"timestamp": "2026-09-10 21:00:10",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210010_2.jpg"
+},
+{
+"id": 82,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 425.0,
+"timestamp": "2026-09-10 21:00:10",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210010_3.jpg"
+},
+{
+"id": 83,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 428.0,
+"timestamp": "2026-09-10 21:00:10",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210010_0.jpg"
+},
+{
+"id": 84,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 428.0,
+"timestamp": "2026-09-10 21:00:10",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210010_1.jpg"
+},
+{
+"id": 85,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 428.0,
+"timestamp": "2026-09-10 21:00:10",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210010_2.jpg"
+},
+{
+"id": 86,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 428.0,
+"timestamp": "2026-09-10 21:00:10",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210010_3.jpg"
+},
+{
+"id": 87,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 428.0,
+"timestamp": "2026-09-10 21:00:10",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210010_4.jpg"
+},
+{
+"id": 88,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 431.0,
+"timestamp": "2026-09-10 21:00:10",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210010_0.jpg"
+},
+{
+"id": 89,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 431.0,
+"timestamp": "2026-09-10 21:00:10",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210010_1.jpg"
+},
+{
+"id": 90,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 434.0,
+"timestamp": "2026-09-10 21:00:10",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210010_0.jpg"
+},
+{
+"id": 91,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 434.0,
+"timestamp": "2026-09-10 21:00:10",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210010_1.jpg"
+},
+{
+"id": 92,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 434.0,
+"timestamp": "2026-09-10 21:00:10",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210010_2.jpg"
+},
+{
+"id": 93,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 434.0,
+"timestamp": "2026-09-10 21:00:10",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210010_3.jpg"
+},
+{
+"id": 94,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 434.0,
+"timestamp": "2026-09-10 21:00:10",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210010_4.jpg"
+},
+{
+"id": 95,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 438.0,
+"timestamp": "2026-09-10 21:00:10",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210010_0.jpg"
+},
+{
+"id": 96,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 438.0,
+"timestamp": "2026-09-10 21:00:10",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210010_1.jpg"
+},
+{
+"id": 97,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 438.0,
+"timestamp": "2026-09-10 21:00:10",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210010_2.jpg"
+},
+{
+"id": 98,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 438.0,
+"timestamp": "2026-09-10 21:00:10",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210010_3.jpg"
+},
+{
+"id": 99,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 441.5,
+"timestamp": "2026-09-10 21:00:10",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210010_0.jpg"
+},
+{
+"id": 100,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 441.5,
+"timestamp": "2026-09-10 21:00:10",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210010_1.jpg"
+},
+{
+"id": 101,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 441.5,
+"timestamp": "2026-09-10 21:00:10",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210010_2.jpg"
+},
+{
+"id": 102,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 441.5,
+"timestamp": "2026-09-10 21:00:10",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210010_3.jpg"
+},
+{
+"id": 103,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 441.5,
+"timestamp": "2026-09-10 21:00:10",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210010_4.jpg"
+},
+{
+"id": 104,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 441.5,
+"timestamp": "2026-09-10 21:00:10",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210010_5.jpg"
+},
+{
+"id": 105,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 445.0,
+"timestamp": "2026-09-10 21:00:10",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210010_0.jpg"
+},
+{
+"id": 106,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 445.0,
+"timestamp": "2026-09-10 21:00:10",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210010_1.jpg"
+},
+{
+"id": 107,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 445.0,
+"timestamp": "2026-09-10 21:00:10",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210010_2.jpg"
+},
+{
+"id": 108,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 448.0,
+"timestamp": "2026-09-10 21:00:10",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210010_0.jpg"
+},
+{
+"id": 109,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 448.0,
+"timestamp": "2026-09-10 21:00:10",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210010_1.jpg"
+},
+{
+"id": 110,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 448.0,
+"timestamp": "2026-09-10 21:00:10",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210010_2.jpg"
+},
+{
+"id": 111,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 448.0,
+"timestamp": "2026-09-10 21:00:10",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210010_3.jpg"
+},
+{
+"id": 112,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 448.0,
+"timestamp": "2026-09-10 21:00:10",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210010_4.jpg"
+},
+{
+"id": 113,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 451.0,
+"timestamp": "2026-09-10 21:00:10",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210010_0.jpg"
+},
+{
+"id": 114,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 451.0,
+"timestamp": "2026-09-10 21:00:10",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210010_1.jpg"
+},
+{
+"id": 115,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 451.0,
+"timestamp": "2026-09-10 21:00:10",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210010_2.jpg"
+},
+{
+"id": 116,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 451.0,
+"timestamp": "2026-09-10 21:00:10",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210010_3.jpg"
+},
+{
+"id": 117,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 454.0,
+"timestamp": "2026-09-10 21:00:10",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210010_0.jpg"
+},
+{
+"id": 118,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 454.0,
+"timestamp": "2026-09-10 21:00:10",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210010_1.jpg"
+},
+{
+"id": 119,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 454.0,
+"timestamp": "2026-09-10 21:00:10",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210010_2.jpg"
+},
+{
+"id": 120,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 454.0,
+"timestamp": "2026-09-10 21:00:10",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210010_3.jpg"
+},
+{
+"id": 121,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 454.0,
+"timestamp": "2026-09-10 21:00:10",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210010_4.jpg"
+},
+{
+"id": 122,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 457.0,
+"timestamp": "2026-09-10 21:00:10",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210010_0.jpg"
+},
+{
+"id": 123,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 457.0,
+"timestamp": "2026-09-10 21:00:10",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210010_1.jpg"
+},
+{
+"id": 124,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 457.0,
+"timestamp": "2026-09-10 21:00:10",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210010_2.jpg"
+},
+{
+"id": 125,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 457.0,
+"timestamp": "2026-09-10 21:00:10",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210010_3.jpg"
+},
+{
+"id": 126,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 460.0,
+"timestamp": "2026-09-10 21:00:10",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210010_0.jpg"
+},
+{
+"id": 127,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 460.0,
+"timestamp": "2026-09-10 21:00:10",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210010_1.jpg"
+},
+{
+"id": 128,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 460.0,
+"timestamp": "2026-09-10 21:00:10",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210010_2.jpg"
+},
+{
+"id": 129,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 460.0,
+"timestamp": "2026-09-10 21:00:10",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210010_3.jpg"
+},
+{
+"id": 130,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 460.0,
+"timestamp": "2026-09-10 21:00:10",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210010_4.jpg"
+},
+{
+"id": 131,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 463.0,
+"timestamp": "2026-09-10 21:00:11",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210011_0.jpg"
+},
+{
+"id": 132,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 463.0,
+"timestamp": "2026-09-10 21:00:11",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210011_1.jpg"
+},
+{
+"id": 133,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 463.0,
+"timestamp": "2026-09-10 21:00:11",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210011_2.jpg"
+},
+{
+"id": 134,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 463.0,
+"timestamp": "2026-09-10 21:00:11",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210011_3.jpg"
+},
+{
+"id": 135,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 467.5,
+"timestamp": "2026-09-10 21:00:11",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210011_0.jpg"
+},
+{
+"id": 136,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 467.5,
+"timestamp": "2026-09-10 21:00:11",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210011_1.jpg"
+},
+{
+"id": 137,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 467.5,
+"timestamp": "2026-09-10 21:00:11",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210011_2.jpg"
+},
+{
+"id": 138,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 467.5,
+"timestamp": "2026-09-10 21:00:11",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210011_3.jpg"
+},
+{
+"id": 139,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 467.5,
+"timestamp": "2026-09-10 21:00:11",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210011_4.jpg"
+},
+{
+"id": 140,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 471.0,
+"timestamp": "2026-09-10 21:00:11",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210011_0.jpg"
+},
+{
+"id": 141,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 471.0,
+"timestamp": "2026-09-10 21:00:11",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210011_1.jpg"
+},
+{
+"id": 142,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 471.0,
+"timestamp": "2026-09-10 21:00:11",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210011_2.jpg"
+},
+{
+"id": 143,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 471.0,
+"timestamp": "2026-09-10 21:00:11",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210011_3.jpg"
+},
+{
+"id": 144,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 474.5,
+"timestamp": "2026-09-10 21:00:11",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210011_0.jpg"
+},
+{
+"id": 145,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 474.5,
+"timestamp": "2026-09-10 21:00:11",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210011_1.jpg"
+},
+{
+"id": 146,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 474.5,
+"timestamp": "2026-09-10 21:00:11",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210011_2.jpg"
+},
+{
+"id": 147,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 474.5,
+"timestamp": "2026-09-10 21:00:11",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210011_3.jpg"
+},
+{
+"id": 148,
+"sheet_number": "COIL-2026-A101",
+"defect_type": "Scratch",
+"length_meter": 474.5,
+"timestamp": "2026-09-10 21:00:11",
+"image_path": "reports/COIL-2026-A101/images/COIL-2026-A101_Scratch_20260910_210011_4.jpg"
+}
+]
