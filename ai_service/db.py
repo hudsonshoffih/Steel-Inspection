@@ -3,9 +3,10 @@ import os
 from datetime import datetime
 from typing import List, Dict, Any, Optional
 
-BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
-LOCAL_DB_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "defects.db"))
-DB_PATH = LOCAL_DB_PATH if os.path.exists(LOCAL_DB_PATH) else os.path.join(BASE_DIR, "defects.db")
+BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+LOCAL_DB_PATH = os.path.join(os.path.dirname(__file__), "defects.db")
+DEFAULT_DB_PATH = LOCAL_DB_PATH if os.path.exists(LOCAL_DB_PATH) else os.path.join(BASE_DIR, "defects.db")
+DB_PATH = os.path.abspath(os.environ.get("DEFECTS_DB_PATH", DEFAULT_DB_PATH))
 
 def get_connection():
     conn = sqlite3.connect(DB_PATH)

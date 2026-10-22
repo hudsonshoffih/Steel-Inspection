@@ -21,6 +21,11 @@ export class PythonSupervisor {
   }
 
   public static async ensureServiceRunning(): Promise<void> {
+    if (!CONFIG.SPAWN_PYTHON) {
+      console.log("ℹ️ [Supervisor] Python process spawning disabled by SPAWN_PYTHON=false.");
+      return;
+    }
+
     const isHealthy = await this.isServiceHealthy();
     if (isHealthy) {
       console.log(`✅ [Supervisor] Python AI Service is already running at ${CONFIG.PYTHON_SERVICE_URL}`);

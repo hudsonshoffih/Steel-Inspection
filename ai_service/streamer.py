@@ -11,7 +11,7 @@ from detector import DefectDetector
 from meter_tracker import MeterTracker
 from report_exporter import generate_excel_report
 
-BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 
 class VideoStreamManager:
     def __init__(self, detector: DefectDetector):

@@ -77,6 +77,40 @@ Open your browser and navigate to:
 
 The Node.js server automatically starts and monitors the Python AI service on port 8000, proxies requests, and serves the dashboard.
 
+### Run with Docker Compose
+
+Install and start Docker Desktop, then run these commands from the project root:
+
+```bash
+docker compose up --build
+```
+
+The dashboard is available at **`http://localhost:8080`**. The Python AI service
+and Node gateway stay on the internal Compose network; only the Nginx frontend
+is published to the host. The first build downloads the CPU-only PyTorch
+dependencies and can take several minutes.
+
+In a second terminal, run the stack smoke test:
+
+```bash
+bash scripts/smoke_test.sh http://localhost:8080
+```
+
+It checks the dashboard and API endpoints, a valid image upload, invalid upload
+types and sizes, and rejection of unsafe sheet IDs. A successful run ends with
+`ALL CHECKS PASSED`.
+
+The named `steel_data` volume keeps the SQLite database and generated reports
+across container restarts. Stop and restart the stack with:
+
+```bash
+docker compose down
+docker compose up
+```
+
+Do not add `-v` to `docker compose down` if you want to preserve that data;
+`docker compose down -v` deletes the named volume.
+
 ---
 
 ### Development Mode
@@ -90,6 +124,13 @@ npm run dev
 - Web Dashboard (Vite): `http://localhost:3000`
 - API Gateway (Node.js): `http://localhost:5000`
 - Python AI Engine (FastAPI): `http://localhost:8000`
+
+Run the Python unit tests with:
+
+```bash
+pip install -r ai_service/requirements-dev.txt
+python -m pytest ai_service/tests
+```
 
 ---
 

@@ -1,0 +1,56 @@
+services:
+  ai-service:
+    build:
+      context: .
+      dockerfile: ai_service/Dockerfile
+    environment:
+      MODEL_PATH: /app/models/best.pt
+      DEFECTS_DB_PATH: /data/defects.db
+      REPORTS_DIR: /data/reports
+    volumes:
+      - steel_data:/data
+    expose:
+      - "8000"
+    restart: unless-stopped
+    healthcheck:
+      test:
+        - CMD
+        - python
+        - -c
+        - "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health', timeout=4)"
+      interval: 30s
+      timeout: 5s
+      start_period: 120s
+      retries: 5
+
+  gateway:
+    build:
+      context: .
+      dockerfile: server/Dockerfile
+    environment:
+      PORT: "5000"
+      PYTHON_SERVICE_URL: http://ai-service:8000
+      SPAWN_PYTHON: "false"
+      REPORTS_PATH: /data/reports
+    volumes:
+      - steel_data:/data
+    expose:
+      - "5000"
+    depends_on:
+      ai-service:
+        condition: service_healthy
+    restart: unless-stopped
+
+  client:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+    depends_on:
+      gateway:
+        condition: service_healthy
+    restart: unless-stopped
+
+volumes:
+  steel_data:

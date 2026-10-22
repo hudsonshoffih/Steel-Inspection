@@ -49,9 +49,12 @@ const pythonProxy = createProxyMiddleware({
   }
 });
 
-// Forward /api/* and /health to Python service (excluding /api/gateway/*)
-app.use("/health", pythonProxy);
+// Forward /api/* and /health to Python service (excluding /api/gateway/*).
+// Keep /health mounted at the app root so the proxy receives the original path.
 app.use((req: Request, res: Response, next: NextFunction) => {
+  if (req.path === "/health") {
+    return pythonProxy(req, res, next);
+  }
   if (req.path.startsWith("/api/gateway")) {
     return next();
   }

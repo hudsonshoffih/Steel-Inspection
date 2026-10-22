@@ -3,8 +3,8 @@ import pandas as pd
 from typing import List, Dict, Any
 from datetime import datetime
 
-BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
-REPORTS_DIR = os.path.join(BASE_DIR, "reports")
+BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+REPORTS_DIR = os.path.abspath(os.environ.get("REPORTS_DIR", os.path.join(BASE_DIR, "reports")))
 
 def generate_excel_report(sheet_id: str, defect_data: List[Dict[str, Any]]) -> str:
     """Generate and save Excel report for a given sheet inspection."""

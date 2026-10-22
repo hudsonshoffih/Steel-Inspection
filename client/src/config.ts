@@ -10,7 +10,9 @@
 // does not spam failed fetches and console errors on load.
 export const DEMO_MODE: boolean =
   import.meta.env.VITE_DEMO_MODE === "true" ||
-  (import.meta.env.PROD && !import.meta.env.VITE_API_BASE_URL);
+  (import.meta.env.PROD &&
+    import.meta.env.VITE_DEMO_MODE !== "false" &&
+    !import.meta.env.VITE_API_BASE_URL);
 
 // Strip any trailing slash so we can safely do `${API_BASE}/api/...`
 export const API_BASE: string = (import.meta.env.VITE_API_BASE_URL ?? "").replace(/\/+$/, "");

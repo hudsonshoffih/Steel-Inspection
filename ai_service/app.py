@@ -10,12 +10,26 @@ from fastapi.responses import StreamingResponse, FileResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
-from detector import DefectDetector, DEFAULT_MODEL_PATH, FALLBACK_MODEL_PATH
+from detector import DefectDetector
 from streamer import VideoStreamManager
 from db import init_db, get_all_defects, get_defects_by_sheet, get_defect_stats, delete_defect
 from report_exporter import list_all_reports, REPORTS_DIR, generate_excel_report
 
-BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+MAX_UPLOAD_BYTES = 10 * 1024 * 1024
+
+def validate_sheet_id(sheet_id: str) -> str:
+    if (
+        not sheet_id
+        or len(sheet_id) > 100
+        or sheet_id in {".", ".."}
+        or any(char not in "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789._-" for char in sheet_id)
+    ):
+        raise HTTPException(
+            status_code=400,
+            detail="Invalid sheet ID. Use up to 100 letters, numbers, dots, underscores, or hyphens.",
+        )
+    return sheet_id
 
 # Initialize Database Schema
 init_db()
@@ -68,6 +82,7 @@ def health_check():
 # ----------------- Inspection Session -----------------
 @app.post("/api/inspection/start")
 def start_inspection(req: StartInspectionRequest):
+    validate_sheet_id(req.sheet_id)
     result = streamer.start_inspection(
         sheet_id=req.sheet_id,
         speed_mps=req.speed_mps,
@@ -108,7 +123,13 @@ async def inspect_uploaded_image(
     conf_threshold: float = Form(0.08),
     sheet_id: Optional[str] = Form("UPLOADED_SAMPLE")
 ):
-    contents = await file.read()
+    if not file.content_type or not file.content_type.startswith("image/"):
+        raise HTTPException(status_code=415, detail="Upload must be an image.")
+
+    contents = await file.read(MAX_UPLOAD_BYTES + 1)
+    if len(contents) > MAX_UPLOAD_BYTES:
+        raise HTTPException(status_code=413, detail="Image must be 10 MB or smaller.")
+
     nparr = np.frombuffer(contents, np.uint8)
     image = cv2.imdecode(nparr, cv2.IMREAD_COLOR)
 
@@ -165,6 +186,7 @@ def get_reports_list():
 
 @app.get("/api/reports/download/{sheet_id}")
 def download_excel_report(sheet_id: str):
+    validate_sheet_id(sheet_id)
     excel_path = os.path.join(REPORTS_DIR, sheet_id, f"{sheet_id}.xlsx")
     if not os.path.exists(excel_path):
         # Auto-generate from DB records if not already exported

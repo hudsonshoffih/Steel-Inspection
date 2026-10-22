@@ -14,19 +14,19 @@ class MeterTracker:
             self.sheet_number = sheet_number
         if speed_m_per_sec is not None:
             self.speed = float(speed_m_per_sec)
-        self.start_time = time.time()
+        self.start_time = time.monotonic()
         self.accumulated_time = 0.0
         self.is_running = True
 
     def pause(self):
         if self.is_running and self.start_time is not None:
-            self.accumulated_time += time.time() - self.start_time
+            self.accumulated_time += time.monotonic() - self.start_time
             self.start_time = None
             self.is_running = False
 
     def resume(self):
         if not self.is_running:
-            self.start_time = time.time()
+            self.start_time = time.monotonic()
             self.is_running = True
 
     def stop(self) -> float:
@@ -39,7 +39,9 @@ class MeterTracker:
     def get_elapsed_seconds(self) -> float:
         if not self.is_running:
             return round(self.accumulated_time, 2)
-        elapsed = self.accumulated_time + (time.time() - self.start_time if self.start_time else 0.0)
+        elapsed = self.accumulated_time + (
+            time.monotonic() - self.start_time if self.start_time is not None else 0.0
+        )
         return round(elapsed, 2)
 
     def get_length(self) -> float:

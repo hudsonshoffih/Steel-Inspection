@@ -7,11 +7,19 @@ from ultralytics import YOLO
 
 from db import insert_defect
 
-BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
-LOCAL_MODEL_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "models", "best.pt"))
-DEFAULT_MODEL_PATH = LOCAL_MODEL_PATH if os.path.exists(LOCAL_MODEL_PATH) else os.path.join(BASE_DIR, "runs", "detect", "train5", "weights", "best.pt")
+BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+LOCAL_MODEL_PATH = os.path.join(BASE_DIR, "models", "best.pt")
+MODEL_CANDIDATES = (
+    LOCAL_MODEL_PATH,
+    os.path.join(BASE_DIR, "runs", "detect", "train5", "weights", "best.pt"),
+    os.path.join(BASE_DIR, "yolov8n.pt"),
+)
+DEFAULT_MODEL_PATH = os.path.abspath(os.environ.get(
+    "MODEL_PATH",
+    next((path for path in MODEL_CANDIDATES if os.path.isfile(path)), LOCAL_MODEL_PATH),
+))
 FALLBACK_MODEL_PATH = os.path.join(BASE_DIR, "yolov8n.pt")
-REPORTS_DIR = os.path.join(BASE_DIR, "reports")
+REPORTS_DIR = os.path.abspath(os.environ.get("REPORTS_DIR", os.path.join(BASE_DIR, "reports")))
 
 # Color palette (BGR for OpenCV)
 CLASS_COLORS = {
@@ -30,12 +38,13 @@ class DefectDetector:
     def load_model(self, model_path: str):
         if not os.path.isabs(model_path):
             model_path = os.path.join(BASE_DIR, model_path)
-        
-        if not os.path.exists(model_path):
-            if os.path.exists(DEFAULT_MODEL_PATH):
-                model_path = DEFAULT_MODEL_PATH
-            elif os.path.exists(FALLBACK_MODEL_PATH):
-                model_path = FALLBACK_MODEL_PATH
+        model_path = os.path.abspath(model_path)
+
+        if not os.path.isfile(model_path):
+            raise FileNotFoundError(
+                f"YOLO model file not found: {model_path}. "
+                "Set MODEL_PATH to an existing model file."
+            )
 
         print(f"🔄 Loading YOLO model from: {model_path}")
         self.model = YOLO(model_path)
