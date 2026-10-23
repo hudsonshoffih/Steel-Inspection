@@ -1,5 +1,6 @@
 services:
   ai-service:
+    image: steel-ai:${TAG:-local}
     build:
       context: .
       dockerfile: ai_service/Dockerfile
@@ -24,6 +25,7 @@ services:
       retries: 5
 
   gateway:
+    image: steel-gateway:${TAG:-local}
     build:
       context: .
       dockerfile: server/Dockerfile
@@ -42,11 +44,12 @@ services:
     restart: unless-stopped
 
   client:
+    image: steel-web:${TAG:-local}
     build:
       context: ./client
       dockerfile: Dockerfile
     ports:
-      - "8080:80"
+      - "${WEB_PORT:-8080}:80"
     depends_on:
       gateway:
         condition: service_healthy
