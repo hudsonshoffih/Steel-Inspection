@@ -10,3 +10,5 @@ venv
 .venv
 reports
 defects.db
+*.zip
+k8s-deploy

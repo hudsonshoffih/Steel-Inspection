@@ -1,0 +1,20 @@
+# Applied with: kubectl apply -k .   (the deploy script fills in your Docker Hub user and the image tag)
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: steel
+resources:
+  - namespace.yaml
+  - storage.yaml
+  - ai.yaml
+  - gateway.yaml
+  - web.yaml
+images:
+  - name: steel-ai
+    newName: DOCKERHUB_USER/steel-ai
+    newTag: IMAGE_TAG
+  - name: steel-gateway
+    newName: DOCKERHUB_USER/steel-gateway
+    newTag: IMAGE_TAG
+  - name: steel-web
+    newName: DOCKERHUB_USER/steel-web
+    newTag: IMAGE_TAG

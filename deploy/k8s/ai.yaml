@@ -1,0 +1,51 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ai
+spec:
+  replicas: 1                 # keep at 1: SQLite allows a single writer
+  strategy:
+    type: Recreate            # stop the old pod before starting the new one (they share one disk)
+  selector:
+    matchLabels: { app: ai }
+  template:
+    metadata:
+      labels: { app: ai }
+    spec:
+      securityContext:
+        fsGroup: 1000
+      containers:
+        - name: ai
+          image: steel-ai
+          ports:
+            - containerPort: 8000
+          env:
+            - { name: DEFECTS_DB_PATH, value: /data/defects.db }
+            - { name: REPORTS_DIR, value: /data/reports }
+          volumeMounts:
+            - { name: data, mountPath: /data }
+          resources:
+            requests: { cpu: 250m, memory: 1Gi }
+            limits: { memory: 2Gi }
+          readinessProbe:
+            httpGet: { path: /health, port: 8000 }
+            initialDelaySeconds: 30
+            periodSeconds: 10
+            failureThreshold: 18      # model loading can take a few minutes on a small server
+          livenessProbe:
+            httpGet: { path: /health, port: 8000 }
+            initialDelaySeconds: 120
+            periodSeconds: 20
+            failureThreshold: 5
+      volumes:
+        - name: data
+          persistentVolumeClaim: { claimName: steel-data }
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: ai                    # other pods reach it at http://ai:8000 (Kubernetes DNS)
+spec:
+  selector: { app: ai }
+  ports:
+    - { port: 8000, targetPort: 8000 }

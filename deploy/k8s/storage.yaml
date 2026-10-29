@@ -1,0 +1,10 @@
+# One disk for defects.db and reports. k3s ships a "local-path" provisioner that creates it on the node.
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: steel-data
+spec:
+  accessModes: ["ReadWriteOnce"]
+  resources:
+    requests:
+      storage: 5Gi

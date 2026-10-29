@@ -1,0 +1,299 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 1.02kB done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:3.11-slim
+#2 DONE 0.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 166B done
+#3 DONE 0.0s
+
+#4 [1/9] FROM docker.io/library/python:3.11-slim@sha256:b7a9e5f6a93d6d4a31f129bbd4bdee69efccb6ded0fb230d78aafaf37af98377
+#4 resolve docker.io/library/python:3.11-slim@sha256:b7a9e5f6a93d6d4a31f129bbd4bdee69efccb6ded0fb230d78aafaf37af98377 done
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 7.83MB 0.1s done
+#5 DONE 0.1s
+
+#6 [3/9] WORKDIR /app
+#6 CACHED
+
+#7 [2/9] RUN apt-get update     && apt-get install -y --no-install-recommends libgl1 libglib2.0-0 libgomp1     && rm -rf /var/lib/apt/lists/*
+#7 CACHED
+
+#8 [4/9] COPY ai_service/requirements.txt /app/ai_service/requirements.txt
+#8 CACHED
+
+#9 [5/9] RUN pip install --no-cache-dir --index-url https://download.pytorch.org/whl/cpu torch torchvision     && pip install --no-cache-dir -r /app/ai_service/requirements.txt
+#9 1.321 Looking in indexes: https://download.pytorch.org/whl/cpu
+#9 3.347 Collecting torch
+#9 3.715   Downloading https://download-r2.pytorch.org/whl/cpu/torch-2.14.1%2Bcpu-cp311-cp311-manylinux_2_28_x86_64.whl.metadata (37 kB)
+#9 4.371 Collecting torchvision
+#9 4.502   Downloading https://download-r2.pytorch.org/whl/cpu/torchvision-0.29.1%2Bcpu-cp311-cp311-manylinux_2_28_x86_64.whl.metadata (5.7 kB)
+#9 4.695 Collecting filelock (from torch)
+#9 4.855   Downloading filelock-3.32.3-py3-none-any.whl.metadata (2.0 kB)
+#9 4.958 Collecting typing-extensions>=4.10.0 (from torch)
+#9 5.089   Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+#9 5.098 Requirement already satisfied: setuptools>=77.0.3 in /usr/local/lib/python3.11/site-packages (from torch) (79.0.1)
+#9 5.436 Collecting sympy>=1.13.3 (from torch)
+#9 5.643   Downloading sympy-1.14.0-py3-none-any.whl.metadata (12 kB)
+#9 5.816 Collecting networkx>=2.5.1 (from torch)
+#9 5.872   Downloading networkx-3.6.1-py3-none-any.whl.metadata (6.8 kB)
+#9 6.068 Collecting jinja2 (from torch)
+#9 6.118   Downloading https://download.pytorch.org/whl/jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+#9 6.255 Collecting fsspec>=0.8.5 (from torch)
+#9 6.366   Downloading fsspec-2026.7.0-py3-none-any.whl.metadata (10 kB)
+#9 8.005 Collecting numpy (from torchvision)
+#9 8.118   Downloading numpy-2.4.6-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (6.6 kB)
+#9 9.619 Collecting pillow!=8.3.*,>=5.3.0 (from torchvision)
+#9 9.673   Downloading pillow-12.3.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (9.1 kB)
+#9 10.25 Collecting mpmath<1.4,>=1.1.0 (from sympy>=1.13.3->torch)
+#9 10.30   Downloading mpmath-1.3.0-py3-none-any.whl.metadata (8.6 kB)
+#9 10.65 Collecting MarkupSafe>=2.0 (from jinja2->torch)
+#9 10.70   Downloading https://download.pytorch.org/whl/markupsafe-3.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.7 kB)
+#9 10.92 Downloading https://download-r2.pytorch.org/whl/cpu/torch-2.14.1%2Bcpu-cp311-cp311-manylinux_2_28_x86_64.whl (196.2 MB)
+#9 92.84    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 196.2/196.2 MB 3.3 MB/s eta 0:00:00
+#9 93.67 Downloading https://download-r2.pytorch.org/whl/cpu/torchvision-0.29.1%2Bcpu-cp311-cp311-manylinux_2_28_x86_64.whl (1.7 MB)
+#9 94.13    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.7/1.7 MB 3.8 MB/s eta 0:00:00
+#9 94.51 Downloading fsspec-2026.7.0-py3-none-any.whl (206 kB)
+#9 94.79    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 206.6/206.6 kB 785.8 kB/s eta 0:00:00
+#9 94.92 Downloading networkx-3.6.1-py3-none-any.whl (2.1 MB)
+#9 96.60    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 1.2 MB/s eta 0:00:00
+#9 96.64 Downloading pillow-12.3.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (6.9 MB)
+#9 100.9    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.9/6.9 MB 1.6 MB/s eta 0:00:00
+#9 101.0 Downloading sympy-1.14.0-py3-none-any.whl (6.3 MB)
+#9 102.7    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.3/6.3 MB 3.7 MB/s eta 0:00:00
+#9 102.7 Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+#9 102.7    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.6/45.6 kB 7.2 MB/s eta 0:00:00
+#9 102.8 Downloading filelock-3.32.3-py3-none-any.whl (98 kB)
+#9 102.8    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 98.9/98.9 kB 6.9 MB/s eta 0:00:00
+#9 102.9 Downloading https://download.pytorch.org/whl/jinja2-3.1.6-py3-none-any.whl (134 kB)
+#9 102.9    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 134.9/134.9 kB 5.8 MB/s eta 0:00:00
+#9 103.0 Downloading numpy-2.4.6-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (16.9 MB)
+#9 109.5    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.9/16.9 MB 3.0 MB/s eta 0:00:00
+#9 109.5 Downloading https://download.pytorch.org/whl/markupsafe-3.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (22 kB)
+#9 109.6 Downloading mpmath-1.3.0-py3-none-any.whl (536 kB)
+#9 109.7    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 536.2/536.2 kB 6.6 MB/s eta 0:00:00
+#9 110.7 Installing collected packages: mpmath, typing-extensions, sympy, pillow, numpy, networkx, MarkupSafe, fsspec, filelock, jinja2, torch, torchvision
+#9 126.0 Successfully installed MarkupSafe-3.0.3 filelock-3.32.3 fsspec-2026.7.0 jinja2-3.1.6 mpmath-1.3.0 networkx-3.6.1 numpy-2.4.6 pillow-12.3.0 sympy-1.14.0 torch-2.14.1+cpu torchvision-0.29.1+cpu typing-extensions-4.16.0
+#9 126.0 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+#9 129.5 Collecting fastapi>=0.110.0 (from -r /app/ai_service/requirements.txt (line 1))
+#9 129.6   Downloading fastapi-0.162.0-py3-none-any.whl.metadata (26 kB)
+#9 129.9 Collecting uvicorn>=0.28.0 (from -r /app/ai_service/requirements.txt (line 2))
+#9 130.0   Downloading uvicorn-0.54.0-py3-none-any.whl.metadata (6.6 kB)
+#9 130.2 Collecting websockets>=12.0 (from -r /app/ai_service/requirements.txt (line 3))
+#9 130.2   Downloading websockets-17.3-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (6.3 kB)
+#9 130.3 Collecting python-multipart>=0.0.9 (from -r /app/ai_service/requirements.txt (line 4))
+#9 130.3   Downloading python_multipart-0.0.32-py3-none-any.whl.metadata (2.1 kB)
+#9 130.5 Collecting opencv-python>=4.8.0 (from -r /app/ai_service/requirements.txt (line 5))
+#9 130.5   Downloading opencv_python-5.0.0.93-cp37-abi3-manylinux_2_28_x86_64.whl.metadata (19 kB)
+#9 131.4 Collecting Pillow>=13.0.0 (from -r /app/ai_service/requirements.txt (line 6))
+#9 131.4   Downloading pillow-13.0.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (9.1 kB)
+#9 131.8 Collecting ultralytics>=8.0.0 (from -r /app/ai_service/requirements.txt (line 7))
+#9 132.0   Downloading ultralytics-8.4.187-py3-none-any.whl.metadata (47 kB)
+#9 132.1      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 47.0/47.0 kB 525.9 kB/s eta 0:00:00
+#9 132.1 Requirement already satisfied: torch>=2.0.0 in /usr/local/lib/python3.11/site-packages (from -r /app/ai_service/requirements.txt (line 8)) (2.14.1+cpu)
+#9 132.5 Collecting pandas>=2.0.0 (from -r /app/ai_service/requirements.txt (line 9))
+#9 132.7   Downloading pandas-3.1.0-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (18 kB)
+#9 133.2 Collecting openpyxl>=3.1.0 (from -r /app/ai_service/requirements.txt (line 10))
+#9 133.3   Downloading openpyxl-3.1.5-py2.py3-none-any.whl.metadata (2.5 kB)
+#9 133.5 Collecting pydantic>=2.0.0 (from -r /app/ai_service/requirements.txt (line 11))
+#9 133.6   Downloading pydantic-2.14.1-py3-none-any.whl.metadata (133 kB)
+#9 134.2      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 133.0/133.0 kB 220.1 kB/s eta 0:00:00
+#9 134.3 Collecting starlette>=0.46.0 (from fastapi>=0.110.0->-r /app/ai_service/requirements.txt (line 1))
+#9 134.4   Downloading starlette-1.9.0-py3-none-any.whl.metadata (6.6 kB)
+#9 134.4 Requirement already satisfied: typing-extensions>=4.8.0 in /usr/local/lib/python3.11/site-packages (from fastapi>=0.110.0->-r /app/ai_service/requirements.txt (line 1)) (4.16.0)
+#9 134.5 Collecting typing-inspection>=0.4.2 (from fastapi>=0.110.0->-r /app/ai_service/requirements.txt (line 1))
+#9 134.5   Downloading typing_inspection-0.4.4-py3-none-any.whl.metadata (2.6 kB)
+#9 134.5 Collecting annotated-doc>=0.0.2 (from fastapi>=0.110.0->-r /app/ai_service/requirements.txt (line 1))
+#9 134.6   Downloading annotated_doc-0.0.5-py3-none-any.whl.metadata (6.5 kB)
+#9 134.9 Collecting opentelemetry-api>=1.44.0 (from fastapi>=0.110.0->-r /app/ai_service/requirements.txt (line 1))
+#9 135.1   Downloading opentelemetry_api-1.45.1-py3-none-any.whl.metadata (1.4 kB)
+#9 135.2 Collecting click>=7.0 (from uvicorn>=0.28.0->-r /app/ai_service/requirements.txt (line 2))
+#9 135.4   Downloading click-8.5.0-py3-none-any.whl.metadata (2.6 kB)
+#9 135.5 Collecting h11>=0.8 (from uvicorn>=0.28.0->-r /app/ai_service/requirements.txt (line 2))
+#9 135.7   Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+#9 135.7 Requirement already satisfied: numpy>=2 in /usr/local/lib/python3.11/site-packages (from opencv-python>=4.8.0->-r /app/ai_service/requirements.txt (line 5)) (2.4.6)
+#9 136.1 Collecting matplotlib>=3.3.0 (from ultralytics>=8.0.0->-r /app/ai_service/requirements.txt (line 7))
+#9 136.1   Downloading matplotlib-3.11.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (80 kB)
+#9 136.2      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 80.3/80.3 kB 2.7 MB/s eta 0:00:00
+#9 136.5 Collecting pyyaml>=5.3.1 (from ultralytics>=8.0.0->-r /app/ai_service/requirements.txt (line 7))
+#9 136.6   Downloading pyyaml-6.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.4 kB)
+#9 136.7 Collecting requests>=2.23.0 (from ultralytics>=8.0.0->-r /app/ai_service/requirements.txt (line 7))
+#9 136.7   Downloading requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+#9 136.7 Requirement already satisfied: torchvision>=0.9.0 in /usr/local/lib/python3.11/site-packages (from ultralytics>=8.0.0->-r /app/ai_service/requirements.txt (line 7)) (0.29.1+cpu)
+#9 137.2 Collecting psutil>=5.8.0 (from ultralytics>=8.0.0->-r /app/ai_service/requirements.txt (line 7))
+#9 137.2   Downloading psutil-7.2.2-cp36-abi3-manylinux2010_x86_64.manylinux_2_12_x86_64.manylinux_2_28_x86_64.whl.metadata (22 kB)
+#9 138.5 Collecting polars>=0.20.0 (from ultralytics>=8.0.0->-r /app/ai_service/requirements.txt (line 7))
+#9 138.6   Downloading polars-2.0.0-py3-none-any.whl.metadata (11 kB)
+#9 139.4 Collecting nvidia-ml-py>=12.0.0 (from ultralytics>=8.0.0->-r /app/ai_service/requirements.txt (line 7))
+#9 139.4   Downloading nvidia_ml_py-13.615.71-py3-none-any.whl.metadata (9.7 kB)
+#9 140.1 Collecting ultralytics-thop>=2.2.3 (from ultralytics>=8.0.0->-r /app/ai_service/requirements.txt (line 7))
+#9 140.1   Downloading ultralytics_thop-2.2.3-py3-none-any.whl.metadata (14 kB)
+#9 140.2 Collecting ultralytics-platform>=0.1.45 (from ultralytics>=8.0.0->-r /app/ai_service/requirements.txt (line 7))
+#9 140.3   Downloading ultralytics_platform-0.1.94-py3-none-any.whl.metadata (17 kB)
+#9 140.3 Requirement already satisfied: filelock in /usr/local/lib/python3.11/site-packages (from torch>=2.0.0->-r /app/ai_service/requirements.txt (line 8)) (3.32.3)
+#9 140.3 Requirement already satisfied: setuptools>=77.0.3 in /usr/local/lib/python3.11/site-packages (from torch>=2.0.0->-r /app/ai_service/requirements.txt (line 8)) (79.0.1)
+#9 140.3 Requirement already satisfied: sympy>=1.13.3 in /usr/local/lib/python3.11/site-packages (from torch>=2.0.0->-r /app/ai_service/requirements.txt (line 8)) (1.14.0)
+#9 140.3 Requirement already satisfied: networkx>=2.5.1 in /usr/local/lib/python3.11/site-packages (from torch>=2.0.0->-r /app/ai_service/requirements.txt (line 8)) (3.6.1)
+#9 140.3 Requirement already satisfied: jinja2 in /usr/local/lib/python3.11/site-packages (from torch>=2.0.0->-r /app/ai_service/requirements.txt (line 8)) (3.1.6)
+#9 140.3 Requirement already satisfied: fsspec>=0.8.5 in /usr/local/lib/python3.11/site-packages (from torch>=2.0.0->-r /app/ai_service/requirements.txt (line 8)) (2026.7.0)
+#9 140.4 Collecting python-dateutil>=2.9.0 (from pandas>=2.0.0->-r /app/ai_service/requirements.txt (line 9))
+#9 140.5   Downloading python_dateutil-3.0.0-py2.py3-none-any.whl.metadata (8.2 kB)
+#9 140.8 Collecting et-xmlfile (from openpyxl>=3.1.0->-r /app/ai_service/requirements.txt (line 10))
+#9 140.9   Downloading et_xmlfile-2.0.0-py3-none-any.whl.metadata (2.7 kB)
+#9 140.9 Collecting annotated-types>=0.6.0 (from pydantic>=2.0.0->-r /app/ai_service/requirements.txt (line 11))
+#9 141.0   Downloading annotated_types-0.8.0-py3-none-any.whl.metadata (15 kB)
+#9 143.3 Collecting pydantic-core==2.50.1 (from pydantic>=2.0.0->-r /app/ai_service/requirements.txt (line 11))
+#9 143.4   Downloading pydantic_core-2.50.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.5 kB)
+#9 143.8 Collecting contourpy>=1.0.1 (from matplotlib>=3.3.0->ultralytics>=8.0.0->-r /app/ai_service/requirements.txt (line 7))
+#9 143.9   Downloading contourpy-1.3.3-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (5.5 kB)
+#9 143.9 Collecting cycler>=0.10 (from matplotlib>=3.3.0->ultralytics>=8.0.0->-r /app/ai_service/requirements.txt (line 7))
+#9 143.9   Downloading cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+#9 144.4 Collecting fonttools>=4.28.2 (from matplotlib>=3.3.0->ultralytics>=8.0.0->-r /app/ai_service/requirements.txt (line 7))
+#9 144.5   Downloading fonttools-4.67.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (137 kB)
+#9 144.6      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 137.2/137.2 kB 2.3 MB/s eta 0:00:00
+#9 144.8 Collecting kiwisolver>=1.3.1 (from matplotlib>=3.3.0->ultralytics>=8.0.0->-r /app/ai_service/requirements.txt (line 7))
+#9 144.9   Downloading kiwisolver-1.5.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (5.2 kB)
+#9 144.9 Requirement already satisfied: packaging>=20.0 in /usr/local/lib/python3.11/site-packages (from matplotlib>=3.3.0->ultralytics>=8.0.0->-r /app/ai_service/requirements.txt (line 7)) (26.3)
+#9 145.0 Collecting pyparsing>=3 (from matplotlib>=3.3.0->ultralytics>=8.0.0->-r /app/ai_service/requirements.txt (line 7))
+#9 145.1   Downloading pyparsing-3.3.3-py3-none-any.whl.metadata (5.9 kB)
+#9 145.2 Collecting polars-runtime-32==2.0.0 (from polars>=0.20.0->ultralytics>=8.0.0->-r /app/ai_service/requirements.txt (line 7))
+#9 145.3   Downloading polars_runtime_32-2.0.0-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (1.5 kB)
+#9 145.3 Collecting six>=1.6 (from python-dateutil>=2.9.0->pandas>=2.0.0->-r /app/ai_service/requirements.txt (line 9))
+#9 145.4   Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+#9 145.7 Collecting tzdata (from python-dateutil>=2.9.0->pandas>=2.0.0->-r /app/ai_service/requirements.txt (line 9))
+#9 145.8   Downloading tzdata-2026.5-py2.py3-none-any.whl.metadata (1.4 kB)
+#9 146.1 Collecting charset_normalizer<4,>=2 (from requests>=2.23.0->ultralytics>=8.0.0->-r /app/ai_service/requirements.txt (line 7))
+#9 146.2   Downloading charset_normalizer-3.5.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (46 kB)
+#9 146.2      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 46.4/46.4 kB 6.4 MB/s eta 0:00:00
+#9 146.2 Collecting idna<4,>=2.5 (from requests>=2.23.0->ultralytics>=8.0.0->-r /app/ai_service/requirements.txt (line 7))
+#9 146.3   Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+#9 146.3 Collecting urllib3<3,>=1.26 (from requests>=2.23.0->ultralytics>=8.0.0->-r /app/ai_service/requirements.txt (line 7))
+#9 146.6   Downloading urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+#9 146.9 Collecting certifi>=2023.5.7 (from requests>=2.23.0->ultralytics>=8.0.0->-r /app/ai_service/requirements.txt (line 7))
+#9 146.9   Downloading certifi-2026.10.23-py3-none-any.whl.metadata (2.5 kB)
+#9 147.0 Collecting anyio<5,>=4.0.0 (from starlette>=0.46.0->fastapi>=0.110.0->-r /app/ai_service/requirements.txt (line 1))
+#9 147.1   Downloading anyio-4.15.1-py3-none-any.whl.metadata (4.7 kB)
+#9 147.1 Requirement already satisfied: mpmath<1.4,>=1.1.0 in /usr/local/lib/python3.11/site-packages (from sympy>=1.13.3->torch>=2.0.0->-r /app/ai_service/requirements.txt (line 8)) (1.3.0)
+#9 147.2 Collecting httpx<1,>=0.28 (from ultralytics-platform>=0.1.45->ultralytics>=8.0.0->-r /app/ai_service/requirements.txt (line 7))
+#9 147.2   Downloading httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+#9 147.2 Requirement already satisfied: MarkupSafe>=2.0 in /usr/local/lib/python3.11/site-packages (from jinja2->torch>=2.0.0->-r /app/ai_service/requirements.txt (line 8)) (3.0.3)
+#9 147.5 Collecting httpcore==1.* (from httpx<1,>=0.28->ultralytics-platform>=0.1.45->ultralytics>=8.0.0->-r /app/ai_service/requirements.txt (line 7))
+#9 147.6   Downloading httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+#9 147.8 Downloading fastapi-0.162.0-py3-none-any.whl (148 kB)
+#9 147.8    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 148.9/148.9 kB 2.4 MB/s eta 0:00:00
+#9 147.9 Downloading uvicorn-0.54.0-py3-none-any.whl (87 kB)
+#9 147.9    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 87.4/87.4 kB 3.1 MB/s eta 0:00:00
+#9 147.9 Downloading websockets-17.3-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (225 kB)
+#9 148.6    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 225.5/225.5 kB 357.2 kB/s eta 0:00:00
+#9 148.7 Downloading python_multipart-0.0.32-py3-none-any.whl (30 kB)
+#9 148.8 Downloading opencv_python-5.0.0.93-cp37-abi3-manylinux_2_28_x86_64.whl (73.8 MB)
+#9 182.5    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 73.8/73.8 MB 2.3 MB/s eta 0:00:00
+#9 182.6 Downloading pillow-13.0.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (7.1 MB)
+#9 185.4    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.1/7.1 MB 2.5 MB/s eta 0:00:00
+#9 185.5 Downloading ultralytics-8.4.187-py3-none-any.whl (1.4 MB)
+#9 185.9    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 3.4 MB/s eta 0:00:00
+#9 186.0 Downloading pandas-3.1.0-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (12.3 MB)
+#9 192.1    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.3/12.3 MB 1.8 MB/s eta 0:00:00
+#9 192.2 Downloading openpyxl-3.1.5-py2.py3-none-any.whl (250 kB)
+#9 192.4    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 250.9/250.9 kB 1.2 MB/s eta 0:00:00
+#9 192.5 Downloading pydantic-2.14.1-py3-none-any.whl (488 kB)
+#9 192.6    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 488.1/488.1 kB 5.4 MB/s eta 0:00:00
+#9 192.6 Downloading pydantic_core-2.50.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.2 MB)
+#9 193.9    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.2/2.2 MB 1.7 MB/s eta 0:00:00
+#9 194.0 Downloading annotated_doc-0.0.5-py3-none-any.whl (5.3 kB)
+#9 194.1 Downloading annotated_types-0.8.0-py3-none-any.whl (13 kB)
+#9 194.2 Downloading click-8.5.0-py3-none-any.whl (125 kB)
+#9 194.2    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 125.3/125.3 kB 4.3 MB/s eta 0:00:00
+#9 194.3 Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+#9 194.3 Downloading matplotlib-3.11.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (9.9 MB)
+#9 198.8    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.9/9.9 MB 2.2 MB/s eta 0:00:00
+#9 198.9 Downloading nvidia_ml_py-13.615.71-py3-none-any.whl (58 kB)
+#9 198.9    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 58.1/58.1 kB 12.3 MB/s eta 0:00:00
+#9 198.9 Downloading opentelemetry_api-1.45.1-py3-none-any.whl (60 kB)
+#9 198.9    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 60.3/60.3 kB 5.8 MB/s eta 0:00:00
+#9 198.9 Downloading polars-2.0.0-py3-none-any.whl (876 kB)
+#9 199.1    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 876.6/876.6 kB 6.9 MB/s eta 0:00:00
+#9 199.1 Downloading polars_runtime_32-2.0.0-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (54.5 MB)
+#9 227.2    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 54.5/54.5 MB 2.8 MB/s eta 0:00:00
+#9 227.3 Downloading psutil-7.2.2-cp36-abi3-manylinux2010_x86_64.manylinux_2_12_x86_64.manylinux_2_28_x86_64.whl (155 kB)
+#9 227.4    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 155.6/155.6 kB 2.0 MB/s eta 0:00:00
+#9 227.5 Downloading python_dateutil-3.0.0-py2.py3-none-any.whl (94 kB)
+#9 227.5    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 94.7/94.7 kB 60.3 MB/s eta 0:00:00
+#9 227.8 Downloading pyyaml-6.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (806 kB)
+#9 228.0    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 806.6/806.6 kB 4.2 MB/s eta 0:00:00
+#9 228.1 Downloading requests-2.34.2-py3-none-any.whl (73 kB)
+#9 228.2    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 73.1/73.1 kB 2.8 MB/s eta 0:00:00
+#9 228.2 Downloading starlette-1.9.0-py3-none-any.whl (80 kB)
+#9 228.2    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 80.3/80.3 kB 7.0 MB/s eta 0:00:00
+#9 228.3 Downloading typing_inspection-0.4.4-py3-none-any.whl (14 kB)
+#9 228.3 Downloading ultralytics_platform-0.1.94-py3-none-any.whl (98 kB)
+#9 228.3    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 98.7/98.7 kB 5.0 MB/s eta 0:00:00
+#9 228.4 Downloading ultralytics_thop-2.2.3-py3-none-any.whl (32 kB)
+#9 228.4 Downloading et_xmlfile-2.0.0-py3-none-any.whl (18 kB)
+#9 228.6 Downloading anyio-4.15.1-py3-none-any.whl (132 kB)
+#9 228.7    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.1/132.1 kB 7.6 MB/s eta 0:00:00
+#9 228.8 Downloading certifi-2026.10.23-py3-none-any.whl (135 kB)
+#9 228.8    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 135.1/135.1 kB 3.1 MB/s eta 0:00:00
+#9 228.9 Downloading charset_normalizer-3.5.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (269 kB)
+#9 228.9    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 270.0/270.0 kB 6.9 MB/s eta 0:00:00
+#9 229.0 Downloading contourpy-1.3.3-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (355 kB)
+#9 229.1    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 355.2/355.2 kB 4.3 MB/s eta 0:00:00
+#9 229.2 Downloading cycler-0.12.1-py3-none-any.whl (8.3 kB)
+#9 229.2 Downloading fonttools-4.67.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (5.5 MB)
+#9 232.0    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.5/5.5 MB 2.0 MB/s eta 0:00:00
+#9 232.1 Downloading httpx-0.28.1-py3-none-any.whl (73 kB)
+#9 232.1    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 73.5/73.5 kB 2.4 MB/s eta 0:00:00
+#9 232.2 Downloading httpcore-1.0.9-py3-none-any.whl (78 kB)
+#9 232.2    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 78.8/78.8 kB 10.2 MB/s eta 0:00:00
+#9 232.2 Downloading idna-3.20-py3-none-any.whl (69 kB)
+#9 232.2    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 69.6/69.6 kB 17.2 MB/s eta 0:00:00
+#9 232.3 Downloading kiwisolver-1.5.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (1.4 MB)
+#9 232.8    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 2.9 MB/s eta 0:00:00
+#9 232.9 Downloading pyparsing-3.3.3-py3-none-any.whl (126 kB)
+#9 233.0    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 126.4/126.4 kB 3.6 MB/s eta 0:00:00
+#9 233.0 Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+#9 233.1 Downloading urllib3-2.8.0-py3-none-any.whl (135 kB)
+#9 233.1    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 135.7/135.7 kB 6.6 MB/s eta 0:00:00
+#9 233.2 Downloading tzdata-2026.5-py2.py3-none-any.whl (347 kB)
+#9 233.3    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 348.0/348.0 kB 6.2 MB/s eta 0:00:00
+#9 234.2 Installing collected packages: nvidia-ml-py, websockets, urllib3, tzdata, typing-inspection, six, pyyaml, python-multipart, pyparsing, pydantic-core, psutil, polars-runtime-32, Pillow, opentelemetry-api, opencv-python, kiwisolver, idna, h11, fonttools, et-xmlfile, cycler, contourpy, click, charset_normalizer, certifi, annotated-types, annotated-doc, uvicorn, requests, python-dateutil, pydantic, polars, openpyxl, httpcore, anyio, ultralytics-thop, starlette, pandas, matplotlib, httpx, ultralytics-platform, fastapi, ultralytics
+#9 235.5   Attempting uninstall: Pillow
+#9 235.5     Found existing installation: pillow 12.3.0
+#9 235.5     Uninstalling pillow-12.3.0:
+#9 235.5       Successfully uninstalled pillow-12.3.0
+#9 243.7 Successfully installed Pillow-13.0.0 annotated-doc-0.0.5 annotated-types-0.8.0 anyio-4.15.1 certifi-2026.10.23 charset_normalizer-3.5.2 click-8.5.0 contourpy-1.3.3 cycler-0.12.1 et-xmlfile-2.0.0 fastapi-0.162.0 fonttools-4.67.0 h11-0.16.0 httpcore-1.0.9 httpx-0.28.1 idna-3.20 kiwisolver-1.5.1 matplotlib-3.11.2 nvidia-ml-py-13.615.71 opencv-python-5.0.0.93 openpyxl-3.1.5 opentelemetry-api-1.45.1 pandas-3.1.0 polars-2.0.0 polars-runtime-32-2.0.0 psutil-7.2.2 pydantic-2.14.1 pydantic-core-2.50.1 pyparsing-3.3.3 python-dateutil-3.0.0 python-multipart-0.0.32 pyyaml-6.0.3 requests-2.34.2 six-1.17.0 starlette-1.9.0 typing-inspection-0.4.4 tzdata-2026.5 ultralytics-8.4.187 ultralytics-platform-0.1.94 ultralytics-thop-2.2.3 urllib3-2.8.0 uvicorn-0.54.0 websockets-17.3
+#9 243.7 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+#9 244.1 
+#9 244.1 [notice] A new release of pip is available: 24.0 -> 26.2.2
+#9 244.1 [notice] To update, run: pip install --upgrade pip
+#9 DONE 244.8s
+
+#10 [6/9] COPY ai_service/ /app/ai_service/
+#10 DONE 0.1s
+
+#11 [7/9] COPY models/best.pt /app/models/best.pt
+#11 DONE 0.0s
+
+#12 [8/9] COPY sample_data/ /app/sample_data/
+#12 DONE 0.0s
+
+#13 [9/9] WORKDIR /app/ai_service
+#13 DONE 0.0s
+
+#14 exporting to image
+#14 exporting layers
+#14 exporting layers 37.9s done
+#14 exporting manifest sha256:6344e28ef8123a7bca68f696b24344ff2661587b1bbeb242702179cba917d6d1 0.0s done
+#14 exporting config sha256:16ba08c91ac3b84f3450cf0889be2df3ed7e471602c81147d7f406fbb70a2070 done
+#14 exporting attestation manifest sha256:dca0cb020a9bc34e090aa7a7cd3cfca06d6bef693edf47fff87c74036d554071 0.0s done
+#14 exporting manifest list sha256:7bbf043a9c830c753f5c1abca74510e61868a7126d14c833deb00f040820fb7d done
+#14 naming to docker.io/library/test-ai:latest done
+#14 DONE 38.1s
+
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/mbg7enmey4kbb61cx8u6zbht1
